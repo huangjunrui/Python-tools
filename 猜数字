@@ -1,0 +1,17 @@
+import random
+
+answer = random.randint(1 , 1000)
+counter = 0
+
+while True:
+    counter += 1
+    x = int(input("请输入一个数"))
+    if x == answer :
+        print("你答对了")
+        break
+    if x > answer :
+        print("大了")
+    if x < answer :
+        print("小了")
+
+print('你一共输入了%d次' % (counter) )

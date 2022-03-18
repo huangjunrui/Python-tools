@@ -1,0 +1,11 @@
+from math import sqrt
+
+a = 2
+while a < 10000:
+    a += 1 
+    p = True
+    for x in range (2,a-1):
+        if a % x == 0 :
+            p = False
+    if  p and a != 1:
+        print("%d是质数"%a)

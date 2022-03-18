@@ -1,0 +1,32 @@
+from random import randint,sample
+import random
+
+time = 0
+
+def choujiang():
+    list1 = [x for x in range(1,34)]
+    list2 = [x for x in range(1,16)]
+    a = random.sample(list1,5)
+    b = random.sample(list2,1)
+    c = sorted(a) + b
+    print('中奖号码为')
+    print(c)
+    d = random.sample(list1,5)
+    e = random.sample(list2,1)
+    f = sorted(d) + e
+    print("您的号码为")
+    print(f)
+    return c,f
+u = []
+i = [1]
+while u != i:
+    print("您没中奖")
+    time += 1
+    print("已经是是第%d次了"%time)
+    u,i =choujiang()
+    if time >= 1000000 :
+        print("下次再来吧")
+        break
+    if u == i:
+        print("您中奖了")
+        break 

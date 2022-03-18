@@ -1,0 +1,16 @@
+import random
+
+
+
+def creatcode (n=4):
+    zip1 = '123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+    code = ''
+    for _ in range(0,n):
+        index = random.randint(0,len(zip1)-1) #创造随机数
+        code += zip1[index] #随机数遍历四遍数组
+    return code
+
+
+
+
+print(creatcode(4))

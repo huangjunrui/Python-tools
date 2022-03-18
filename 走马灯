@@ -1,0 +1,12 @@
+
+import os
+import time
+
+content = '今天不吃饭'
+a = 0
+while a < 100 :
+    os.system('cls')
+    print(content)
+    time.sleep(1)
+    content = content[1:] + content[0]
+#取消前一位挪至最后一位

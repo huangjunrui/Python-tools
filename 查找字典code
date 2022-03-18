@@ -1,0 +1,2 @@
+def seachcode(str,str1):
+    return str1[str]

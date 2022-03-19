@@ -1,0 +1,23 @@
+class student (object):
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+    
+    def study(self,coures_name):
+        print("%s正在学习%s" %(self.name,coures_name))
+    
+    def watch_movie(self):
+        if self.age < 18:
+            print("%s只能看熊大"%self.name)
+        else :
+            print("%s可以看成人电影"%self.name)
+
+def main():
+    stu1 = student('黄君睿',27)
+    stu2 = student('黄晨晨',17)
+    print(student.study(stu1,'化学'))
+
+if __name__ == '__main__':
+    main()
+
+        

@@ -1,0 +1,6 @@
+import json
+import requests
+r = requests.get('http://www.baidu.com')
+json.dump(r.text,open('baidu.txt','w',encoding='ISO-8859-1'))
+
+

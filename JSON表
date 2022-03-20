@@ -1,0 +1,23 @@
+from encodings import utf_8
+import json
+
+def main():
+    mydict = {
+
+        'name' : '黄君睿',
+        'age':'27',
+        'hair':'Black',
+        'cars':[
+            {'brand':'BYD','maxspeed':'140',
+             'brand':'Audi','maxspeed':'280'}
+        ]
+    }
+    d = '2.txt'
+    try:
+        with open(d,'w',encoding='utf_8') as f:
+            json.dump(mydict,f)
+    except IOError as e:
+            print(e)
+
+if __name__ == '__main__':
+    main()
